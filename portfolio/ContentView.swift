@@ -1,34 +1,32 @@
-//
-//  ContentView.swift
-//  portfolio
-//
-//  Created by Alexander Neal on 9/8/24.
-//
-import Charts
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-
     var body: some View {
         NavigationSplitView {
             List {
-                NavigationLink("Dashboard",destination: Dashboard())
-                NavigationLink("Investments",destination: Investments())
-                NavigationLink("RealEstate",destination: RealEstate())
+                NavigationLink("Dashboard", destination: Dashboard)
+                NavigationLink("Investments", destination: Investments())
+                NavigationLink("Real Estate", destination: LocationsDetailsChart())
             }
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-            
+            .navigationTitle("Menu")
+            .frame(minWidth: 200)  // Adjust the width of the sidebar
         } detail: {
             Text("Welcome to the dashboard!")
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                
         }
+        .navigationSplitViewStyle(.automatic)
     }
+}
 
-    
+struct RealEstateView: View {
+    var body: some View {
+        // Example of showing the chart here
+        Text("Real Estate Chart")
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+    }
 }
 
 #Preview {
     ContentView()
-    
 }

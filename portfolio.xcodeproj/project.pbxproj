@@ -17,6 +17,9 @@
 		1059FD082C66502500FBD29C /* portfolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FD072C66502500FBD29C /* portfolioUITestsLaunchTests.swift */; };
 		10CB24472C692929007CF092 /* Investments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB24462C692929007CF092 /* Investments.swift */; };
 		10CB24492C69293C007CF092 /* RealEstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB24482C69293C007CF092 /* RealEstate.swift */; };
+		10CB248E2C6C0B4F007CF092 /* RealEstateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB248D2C6C0B4F007CF092 /* RealEstateDetails.swift */; };
+		10CB24902C6C0B75007CF092 /* RealEstateToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB248F2C6C0B75007CF092 /* RealEstateToggle.swift */; };
+		10CB24922C6C0BC8007CF092 /* VTDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB24912C6C0BC8007CF092 /* VTDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		1059FD072C66502500FBD29C /* portfolioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		10CB24462C692929007CF092 /* Investments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investments.swift; sourceTree = "<group>"; };
 		10CB24482C69293C007CF092 /* RealEstate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstate.swift; sourceTree = "<group>"; };
+		10CB248D2C6C0B4F007CF092 /* RealEstateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateDetails.swift; sourceTree = "<group>"; };
+		10CB248F2C6C0B75007CF092 /* RealEstateToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateToggle.swift; sourceTree = "<group>"; };
+		10CB24912C6C0BC8007CF092 /* VTDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				100F02192C665D85000EE71E /* Dashboard.swift */,
 				10CB24462C692929007CF092 /* Investments.swift */,
 				10CB24482C69293C007CF092 /* RealEstate.swift */,
+				10CB248D2C6C0B4F007CF092 /* RealEstateDetails.swift */,
+				10CB248F2C6C0B75007CF092 /* RealEstateToggle.swift */,
+				10CB24912C6C0BC8007CF092 /* VTDetails.swift */,
 				1059FCED2C66502500FBD29C /* Assets.xcassets */,
 				1059FCF22C66502500FBD29C /* portfolio.entitlements */,
 				1059FCEF2C66502500FBD29C /* Preview Content */,
@@ -268,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10CB24902C6C0B75007CF092 /* RealEstateToggle.swift in Sources */,
 				10CB24472C692929007CF092 /* Investments.swift in Sources */,
+				10CB24922C6C0BC8007CF092 /* VTDetails.swift in Sources */,
 				10CB24492C69293C007CF092 /* RealEstate.swift in Sources */,
+				10CB248E2C6C0B4F007CF092 /* RealEstateDetails.swift in Sources */,
 				1059FCEA2C66502400FBD29C /* ContentView.swift in Sources */,
 				100F021A2C665D85000EE71E /* Dashboard.swift in Sources */,
 				1059FCE82C66502400FBD29C /* portfolioApp.swift in Sources */,

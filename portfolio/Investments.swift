@@ -17,7 +17,7 @@ struct Stocks: Identifiable {
 
 let price: [Stocks] = [
     .init(name: "Bitcoin", price: 1703),
-    .init(name: "Ethereum", price: 3973),
+    .init(name: "Ethereum", price: 1000),
     .init(name: "Solana", price: 1954)
 ]
 
@@ -35,6 +35,7 @@ struct Investments: View {
             .cornerRadius(5)
             .foregroundStyle(by: .value("Name", element.name))
         }
+        .padding(.all)
         .chartBackground { chartProxy in
             GeometryReader { geometry in
                 let frame = geometry[chartProxy.plotFrame!]

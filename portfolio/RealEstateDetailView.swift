@@ -1,17 +1,18 @@
 import SwiftUI
 
-struct RealEstateDetail: View {
+struct RealEstateDetailView: View {
     let realEstate: RealEstate
     
     var body: some View {
         VStack {
             Text(realEstate.name)
-                .font(.title)
+                .font(.largeTitle)
                 .padding()
             Text("Monetary Value: \(realEstate.monetary)")
             Text("Date: \(realEstate.date, formatter: dateFormatter)")
         }
         .navigationTitle(realEstate.name)
-        .navigationBarTitleDisplayMode(.inline)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
+

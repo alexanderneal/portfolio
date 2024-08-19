@@ -13,7 +13,7 @@ struct portfolioApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .frame(width: 900, height: 500)
+                .frame(width: 900, height: 400)
                 .frame(maxWidth:.infinity ,maxHeight: .infinity)
         }
     }
