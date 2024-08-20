@@ -11,7 +11,7 @@ struct ContentView: View {
             .navigationTitle("Menu")
             .frame(minWidth: 200)  // Adjust the width of the sidebar
         } detail: {
-            Text("Welcome to the dashboard!")
+            Text("Alexander, welcome to dashboard!")
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 
         }

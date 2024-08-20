@@ -11,8 +11,16 @@ struct ProfitByCategory: Identifiable {
 let dataDashboard: [ProfitByCategory] = [
     ProfitByCategory(department: "Investments", profit: 1200, productCategory: "tracker"),
     ProfitByCategory(department: "Investments", profit: 3200,productCategory: "tracker"),
+    ProfitByCategory(department: "Investments", profit: 1200, productCategory: "tracker"),
+    ProfitByCategory(department: "Investments", profit: 3300,productCategory: "tracker"),
+    ProfitByCategory(department: "Investments", profit: 6500, productCategory: "tracker"),
+    ProfitByCategory(department: "Investments", profit: 4300,productCategory: "tracker"),
     ProfitByCategory(department: "RealEstate", profit: 4000,productCategory: "tracker"),
-    ProfitByCategory(department: "RealEstate", profit: 5000,productCategory: "tracker")
+    ProfitByCategory(department: "RealEstate", profit: 5000,productCategory: "tracker"),
+    ProfitByCategory(department: "RealEstate", profit: 4000,productCategory: "tracker"),
+    ProfitByCategory(department: "RealEstate", profit: 3000,productCategory: "tracker"),
+    ProfitByCategory(department: "RealEstate", profit: 7600,productCategory: "tracker"),
+    ProfitByCategory(department: "RealEstate", profit: 8000,productCategory: "tracker")
 ]
 
 var Dashboard: some View {
@@ -21,7 +29,7 @@ var Dashboard: some View {
             x: .value("Category", item.productCategory),
             y: .value("Profit", item.profit)
         ).foregroundStyle(by: .value("Mismo", item.department))
-    }.padding(.all)
+    }.frame(width: 300).padding(.all)
 }
 
 

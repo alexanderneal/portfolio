@@ -16,9 +16,9 @@ struct Stocks: Identifiable {
 }
 
 let price: [Stocks] = [
-    .init(name: "Bitcoin", price: 1703),
-    .init(name: "Ethereum", price: 1000),
-    .init(name: "Solana", price: 1954)
+    .init(name: "Bitcoin", price: 1706),
+    .init(name: "Ethereum", price: 3870),
+    .init(name: "Solana", price: 1916)
 ]
 
 let mostSold = price.max(by: { $0.price < $1.price })?.name ?? "N/A"
@@ -40,7 +40,7 @@ struct Investments: View {
             GeometryReader { geometry in
                 let frame = geometry[chartProxy.plotFrame!]
                 VStack {
-                    Text("Most Price")
+                    Text("Most Plot")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                     Text(mostSold)

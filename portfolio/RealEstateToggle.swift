@@ -9,13 +9,18 @@ import Charts
 import SwiftUI
 
 let sfData: [PriceHistory] = [
-    .init(weekday: date(2022, 5, 2), priceHistory: 81),
-    .init(weekday: date(2022, 5, 3), priceHistory: 90),
-    .init(weekday: date(2022, 5, 4), priceHistory: 52),
-    .init(weekday: date(2022, 5, 5), priceHistory: 72),
-    .init(weekday: date(2022, 5, 6), priceHistory: 84),
-    .init(weekday: date(2022, 5, 7), priceHistory: 84),
-    .init(weekday: date(2022, 5, 8), priceHistory: 137)
+    .init(weekday: date(2024, 1, 1), priceHistory: 600000),
+    .init(weekday: date(2024, 2, 1), priceHistory: 610000),
+    .init(weekday: date(2024, 3, 1), priceHistory: 620000),
+    .init(weekday: date(2024, 4, 1), priceHistory: 630000),
+    .init(weekday: date(2024, 5, 1), priceHistory: 605000),
+    .init(weekday: date(2024, 6, 1), priceHistory: 630000),
+    .init(weekday: date(2024, 7, 1), priceHistory: 640000),
+    .init(weekday: date(2024, 8, 1), priceHistory: 620000),
+    .init(weekday: date(2024, 9, 1), priceHistory: 650000),
+    .init(weekday: date(2024, 10, 1), priceHistory: 670000),
+    .init(weekday: date(2024, 11, 1), priceHistory: 675000),
+    .init(weekday: date(2024, 12, 1), priceHistory: 650000),
 ]
 
 enum City {
