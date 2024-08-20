@@ -30,10 +30,10 @@
     <img src="/portfolioApp.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Exercises</h3>
+<h3 align="center">Portfolio</h3>
 
   <p align="center">
-Follow up your Net-Worth.
+Follow your Net-Worth.
     <br />
     <br />
     <a href="https://github.com/alexanderneal/portfolio">View Demo</a>
