@@ -12,15 +12,15 @@ let sfData: [PriceHistory] = [
     .init(weekday: date(2024, 1, 1), priceHistory: 600000),
     .init(weekday: date(2024, 2, 1), priceHistory: 610000),
     .init(weekday: date(2024, 3, 1), priceHistory: 620000),
-    .init(weekday: date(2024, 4, 1), priceHistory: 630000),
+    .init(weekday: date(2024, 4, 1), priceHistory: 530000),
     .init(weekday: date(2024, 5, 1), priceHistory: 605000),
-    .init(weekday: date(2024, 6, 1), priceHistory: 630000),
-    .init(weekday: date(2024, 7, 1), priceHistory: 640000),
-    .init(weekday: date(2024, 8, 1), priceHistory: 620000),
-    .init(weekday: date(2024, 9, 1), priceHistory: 650000),
-    .init(weekday: date(2024, 10, 1), priceHistory: 670000),
-    .init(weekday: date(2024, 11, 1), priceHistory: 675000),
-    .init(weekday: date(2024, 12, 1), priceHistory: 650000),
+    .init(weekday: date(2024, 6, 1), priceHistory: 400000),
+    .init(weekday: date(2024, 7, 1), priceHistory: 420000),
+    .init(weekday: date(2024, 8, 1), priceHistory: 420000),
+    .init(weekday: date(2024, 9, 1), priceHistory: 850000),
+    .init(weekday: date(2024, 10, 1), priceHistory: 770000),
+    .init(weekday: date(2024, 11, 1), priceHistory: 775000),
+    .init(weekday: date(2024, 12, 1), priceHistory: 950000),
 ]
 
 enum City {

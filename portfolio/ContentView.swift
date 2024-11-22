@@ -1,6 +1,10 @@
 import SwiftUI
 
+
+
+
 struct ContentView: View {
+    
     var body: some View {
         NavigationSplitView {
             List {
@@ -9,15 +13,15 @@ struct ContentView: View {
                 NavigationLink("Real Estate", destination: LocationsDetailsChart())
             }
             .navigationTitle("Menu")
-            .frame(minWidth: 200)  // Adjust the width of the sidebar
+            .frame(minWidth: 200)            
         } detail: {
-            Text("Alexander, welcome to dashboard!")
+            Text("Alexander, welcome to your dashboard. ")
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                
         }
         .navigationSplitViewStyle(.automatic)
     }
 }
+
 
 struct RealEstateView: View {
     var body: some View {
@@ -26,6 +30,8 @@ struct RealEstateView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
     }
 }
+
+
 
 #Preview {
     ContentView()

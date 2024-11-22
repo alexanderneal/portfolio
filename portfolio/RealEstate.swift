@@ -1,5 +1,6 @@
 import Charts
 import SwiftUI
+import AppKit
 
 struct RealEstateProperties: Identifiable {
     var id: Date { date }  // Use the date as the identifier
@@ -18,10 +19,10 @@ var data: [RealEstateProperties] = [
     RealEstateProperties(month: 1, amountPrice: 600000),
     RealEstateProperties(month: 2, amountPrice: 610000),
     RealEstateProperties(month: 3, amountPrice: 620000),
-    RealEstateProperties(month: 4, amountPrice: 605000),
-    RealEstateProperties(month: 5, amountPrice: 607500),
-    RealEstateProperties(month: 6, amountPrice: 650000),
-    RealEstateProperties(month: 7, amountPrice: 670000),
+    RealEstateProperties(month: 4, amountPrice: 505000),
+    RealEstateProperties(month: 5, amountPrice: 407500),
+    RealEstateProperties(month: 6, amountPrice: 450000),
+    RealEstateProperties(month: 7, amountPrice: 470000),
     RealEstateProperties(month: 8, amountPrice: 675000),
     RealEstateProperties(month: 9, amountPrice: 620000),
     RealEstateProperties(month: 10, amountPrice: 680000),
@@ -40,7 +41,12 @@ struct Brick: View {
     }
 }
 
-#Preview {
+/**let button = NSButton()
+button.image = NSImage(systemSymbolName: "plus", accessibilityDescription: nil)
+button.bezelStyle = .smallSquare
+*/
+ 
+ #Preview {
     ContentView()
 }
 
