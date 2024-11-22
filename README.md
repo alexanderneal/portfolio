@@ -26,7 +26,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/alexanderneal/Exercises">
+  <a href="https://github.com/alexanderneal/portfolio">
     <img src="/portfolioApp.png" alt="Logo" width="80" height="80">
   </a>
 
