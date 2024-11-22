@@ -46,14 +46,17 @@ struct LocationsToggleChart: View {
                 Text("VT").tag(City.VT)
                 Text("San Francisco").tag(City.sanFrancisco)
             }
-            .pickerStyle(.segmented)
+            .padding(.leading)
+            .padding(.trailing)
+            .padding(.top)
+            .pickerStyle(.palette)
             
             Chart(data) { element in
                 LineMark(
                     x: .value("Day", element.weekday, unit: .day),
                     y: .value("Sales", element.priceHistory)
                 )
-            }
+            }.padding(.all)
         }
     }
 }

@@ -49,4 +49,3 @@ button.bezelStyle = .smallSquare
  #Preview {
     ContentView()
 }
-

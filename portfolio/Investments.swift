@@ -27,7 +27,6 @@ struct Investments: View {
 
     var body: some View {
         VStack {
-            
             HStack {
                 Spacer()
                 Button(action: {
