@@ -1,21 +1,43 @@
 import SwiftUI
 
-
-
-
 struct ContentView: View {
     
     var body: some View {
         NavigationSplitView {
-            List {
-                NavigationLink("Dashboard", destination: Dashboard)
-                NavigationLink("Investments", destination: Investments())
-                NavigationLink("Real Estate", destination: LocationsDetailsChart())
+            
+            VStack(alignment: .leading, spacing: 0) {
+                
+                List {
+                    
+                    NavigationLink{
+                        Dashboard
+                    } label: {
+                        Label("Dashboard", systemImage: "ellipsis.calendar")
+                    }
+                    
+                    NavigationLink{
+                        Investments()
+                    }label:{
+                        Label("Investment", systemImage: "banknote")
+                    }
+                    
+                    NavigationLink{
+                        LocationsDetailsChart()
+                    }label: {
+                        Label("Real estate", systemImage: "house")
+                    }
+                }
+                .listStyle(SidebarListStyle())
+                .navigationTitle("Menu")
+                
+                
+                Spacer()
             }
-            .navigationTitle("Menu")
-            .frame(minWidth: 200)            
+            .frame(minWidth: 200, maxWidth: 250, alignment: .topLeading)
+            
         } detail: {
-            Text("Alexander, welcome to your dashboard. ")
+            
+            Text("Alexander, welcome to your dashboard.")
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
         .navigationSplitViewStyle(.automatic)
@@ -25,14 +47,12 @@ struct ContentView: View {
 
 struct RealEstateView: View {
     var body: some View {
-        // Example of showing the chart here
         Text("Real Estate Chart")
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
 }
-
-
 
 #Preview {
     ContentView()
 }
+

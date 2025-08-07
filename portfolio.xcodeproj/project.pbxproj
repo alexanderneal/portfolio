@@ -12,9 +12,6 @@
 		1059FCEA2C66502400FBD29C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FCE92C66502400FBD29C /* ContentView.swift */; };
 		1059FCEE2C66502500FBD29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1059FCED2C66502500FBD29C /* Assets.xcassets */; };
 		1059FCF12C66502500FBD29C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1059FCF02C66502500FBD29C /* Preview Assets.xcassets */; };
-		1059FCFC2C66502500FBD29C /* portfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FCFB2C66502500FBD29C /* portfolioTests.swift */; };
-		1059FD062C66502500FBD29C /* portfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FD052C66502500FBD29C /* portfolioUITests.swift */; };
-		1059FD082C66502500FBD29C /* portfolioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FD072C66502500FBD29C /* portfolioUITestsLaunchTests.swift */; };
 		10CB24472C692929007CF092 /* Investments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB24462C692929007CF092 /* Investments.swift */; };
 		10CB24492C69293C007CF092 /* RealEstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB24482C69293C007CF092 /* RealEstate.swift */; };
 		10CB248E2C6C0B4F007CF092 /* RealEstateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB248D2C6C0B4F007CF092 /* RealEstateDetails.swift */; };
@@ -48,10 +45,7 @@
 		1059FCF02C66502500FBD29C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1059FCF22C66502500FBD29C /* portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = portfolio.entitlements; sourceTree = "<group>"; };
 		1059FCF72C66502500FBD29C /* portfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1059FCFB2C66502500FBD29C /* portfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioTests.swift; sourceTree = "<group>"; };
 		1059FD012C66502500FBD29C /* portfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = portfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1059FD052C66502500FBD29C /* portfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioUITests.swift; sourceTree = "<group>"; };
-		1059FD072C66502500FBD29C /* portfolioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		10CB24462C692929007CF092 /* Investments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investments.swift; sourceTree = "<group>"; };
 		10CB24482C69293C007CF092 /* RealEstate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstate.swift; sourceTree = "<group>"; };
 		10CB248D2C6C0B4F007CF092 /* RealEstateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateDetails.swift; sourceTree = "<group>"; };
@@ -88,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				1059FCE62C66502400FBD29C /* portfolio */,
-				1059FCFA2C66502500FBD29C /* portfolioTests */,
-				1059FD042C66502500FBD29C /* portfolioUITests */,
 				1059FCE52C66502400FBD29C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,23 +120,6 @@
 				1059FCF02C66502500FBD29C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1059FCFA2C66502500FBD29C /* portfolioTests */ = {
-			isa = PBXGroup;
-			children = (
-				1059FCFB2C66502500FBD29C /* portfolioTests.swift */,
-			);
-			path = portfolioTests;
-			sourceTree = "<group>";
-		};
-		1059FD042C66502500FBD29C /* portfolioUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1059FD052C66502500FBD29C /* portfolioUITests.swift */,
-				1059FD072C66502500FBD29C /* portfolioUITestsLaunchTests.swift */,
-			);
-			path = portfolioUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1059FCFC2C66502500FBD29C /* portfolioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1059FD062C66502500FBD29C /* portfolioUITests.swift in Sources */,
-				1059FD082C66502500FBD29C /* portfolioUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +470,6 @@
 		1059FD0F2C66502500FBD29C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -517,7 +488,6 @@
 		1059FD102C66502500FBD29C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -536,7 +506,6 @@
 		1059FD122C66502500FBD29C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AX59226D8Z;
@@ -553,7 +522,6 @@
 		1059FD132C66502500FBD29C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AX59226D8Z;
